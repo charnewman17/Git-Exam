@@ -68,7 +68,10 @@ class Course:
 		starts_later = self.start_time > other.end_time
 		ends_earlier = self.end_time < other.start_time
 		return not (starts_later or ends_earlier)
-
+        
+    def hours(self):
+        total_time = ceil(self.end_time.hour - self.start_time.hour) * (days_of_week.size())
+        return total_time
 def rcos():
 	start_time = time(hour=16, minute=0)
 	end_time = time(hour=17, minute=50)
