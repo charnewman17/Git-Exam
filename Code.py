@@ -55,5 +55,11 @@ def alyssa():
 	remove = ". p"
 	return "".join(letter for letter in surname if letter not in remove)
 
+
 def willy():
+    return "wazoo"
+
+ 
+ def ben():
     return "bitdiddle"
+
